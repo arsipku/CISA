@@ -13,7 +13,7 @@ export class PreregisterPage implements OnInit {
   ngOnInit() {
   }
 
-  onRegister(){
+  onPreRegister(){
     this.router.navigateByUrl("/preregister/register");
   }
 
