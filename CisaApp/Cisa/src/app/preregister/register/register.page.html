@@ -5,5 +5,75 @@
 </ion-header>
 
 <ion-content>
+  <ion-item>
+    <ion-label position="floating">NIK</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
 
+  <ion-item>
+    <ion-label position="floating">Nama Lengkap</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tanggal Lahir</ion-label>
+    <ion-datetime display-format="DD MMM YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Alamat Lengkap</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Status Kepemilikan Rumah</ion-label>
+    <ion-select okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Milik Sendiri">Milik Sendiri</ion-select-option>
+      <ion-select-option value="Sewa/Kontrak">Sewa/Kontrak</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Status Pekerjaan</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="Pegawai Swasta">Pegawai Swasta</ion-select-option>
+      <ion-select-option value="Pegawai Negeri Sipil">Pegawai Negeri Sipil</ion-select-option>
+      <ion-select-option value="Mahasiswa/Pelajar">Mahasiswa/Pelajar</ion-select-option>
+      <ion-select-option value="Wirausaha">Wirausaha</ion-select-option>
+      <ion-select-option value="Ibu Rumah Tangga">Ibu Rumah Tangga</ion-select-option>
+      <ion-select-option value="Tidak Bekerja">Tidak Bekerja</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Pendapatan Bulanan (Rupiah)</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Durasi Peminjaman</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="6 bulan">6 bulan</ion-select-option>
+      <ion-select-option value="12 bulan">12 bulan</ion-select-option>
+      <ion-select-option value="18 bulan">18 bulan</ion-select-option>
+      <ion-select-option value="24 bulan">24 bulan</ion-select-option>
+      <ion-select-option value="30 bulan">30 bulan</ion-select-option>
+      <ion-select-option value="36 bulan">36 bulan</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tujuan Peminjaman</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="Kartu Kredit">Kartu Kredit</ion-select-option>
+      <ion-select-option value="Membeli Kendaraan Baru">Membeli kendaraan baru</ion-select-option>
+      <ion-select-option value="Modal Usaha">Modal Usaha</ion-select-option>
+      <ion-select-option value="Biaya Pernikahan">Biaya Pernikahan</ion-select-option>
+      <ion-select-option value="Pelunasan Hutang">Pelunasan Hutang</ion-select-option>
+      <ion-select-option value="Renovasi Rumah">Renovasi Rumah</ion-select-option>
+      <ion-select-option value="Biaya Perawatan Kesehatan">Biaya Perawatan Kesehatan</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button class="center">Submit</ion-button>
 </ion-content>
