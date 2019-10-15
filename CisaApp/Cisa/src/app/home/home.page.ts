@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadingController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+
+  
+
 
 }
