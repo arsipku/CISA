@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class APIService {
     private records: string;
-    private api: string = 'http://127.0.0.1:8991/cisa';
+    private api: string = 'http://127.0.0.1:8990/cisa';
     constructor(private http: HttpClient) { }
 
     creditRating(body: Object) {
