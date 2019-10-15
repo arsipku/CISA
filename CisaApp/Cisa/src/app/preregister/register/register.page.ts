@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoadingController, AlertController } from '@ionic/angular';
+import { APIService } from 'src/app/api.service';
 
 @Component({
     selector: 'app-register',
@@ -8,16 +9,31 @@ import { LoadingController, AlertController } from '@ionic/angular';
     styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
+    userData: Object;
+    emp_length: number;
+    home_ownership: number;
+    annual_inc: number;
+    total_acc: number;
+    term: number;
 
     constructor(private router: Router,
         private loadingController: LoadingController,
-        private alertController: AlertController) { }
+        private alertController: AlertController,
+        private apiService: APIService) { }
 
     ngOnInit() {
     }
 
     onRegister() {
-        this.router.navigateByUrl("home");
+       this.userData = {
+        "emp_length" : emp_length,
+        "home_ownership" : home_ownership,
+        "annual_inc": annual_inc,
+        "total_acc": total_acc,
+        "term": term
+      };
+        this.apiService.creditRating();
+        this.router.navigateByUrl("home");;
         this.presentLoading();
     }
 

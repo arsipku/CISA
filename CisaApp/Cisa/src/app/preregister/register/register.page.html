@@ -27,9 +27,9 @@
 
     <ion-item>
         <ion-label position="floating">Status Kepemilikan Rumah</ion-label>
-        <ion-select okText="Okay" cancelText="Dismiss">
-            <ion-select-option value="Milik Sendiri">Milik Sendiri</ion-select-option>
-            <ion-select-option value="Sewa/Kontrak">Sewa/Kontrak</ion-select-option>
+        <ion-select [(ngModel)]="home_ownership" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="0">Milik Sendiri</ion-select-option>
+            <ion-select-option value="1">Sewa/Kontrak</ion-select-option>
         </ion-select>
     </ion-item>
 
@@ -47,17 +47,17 @@
 
     <ion-item>
         <ion-label>Lama Bekerja (Bulan)</ion-label>
-        <ion-input></ion-input>
+        <ion-input  [(ngModel)]="emp_length"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label position="floating">Pendapatan Bulanan (Rupiah)</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="annual_inc"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label>Durasi Peminjaman</ion-label>
-        <ion-select placeholder="Select One">
+        <ion-select [(ngModel)]="term" placeholder="Select One">
             <ion-select-option value="6">6 bulan</ion-select-option>
             <ion-select-option value="12">12 bulan</ion-select-option>
             <ion-select-option value="24">24 bulan</ion-select-option>
