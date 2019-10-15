@@ -46,18 +46,23 @@
     </ion-item>
 
     <ion-item>
+        <ion-label>Lama Bekerja (Bulan)</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
         <ion-label position="floating">Pendapatan Bulanan (Rupiah)</ion-label>
         <ion-input></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label>Durasi Peminjaman</ion-label>
-        <ion-select [(ngModel)]="term" placeholder="Select One">
-            <ion-select-option value="6 months">6 bulan</ion-select-option>
-            <ion-select-option value="12 months">12 bulan</ion-select-option>
-            <ion-select-option value="24 months">24 bulan</ion-select-option>
-            <ion-select-option value="36 months">36 bulan</ion-select-option>
-            <ion-select-option value="60 months">60 bulan</ion-select-option>
+        <ion-select placeholder="Select One">
+            <ion-select-option value="6">6 bulan</ion-select-option>
+            <ion-select-option value="12">12 bulan</ion-select-option>
+            <ion-select-option value="24">24 bulan</ion-select-option>
+            <ion-select-option value="36">36 bulan</ion-select-option>
+            <ion-select-option value="60">60 bulan</ion-select-option>
 
         </ion-select>
     </ion-item>
