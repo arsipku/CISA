@@ -25,14 +25,14 @@ export class RegisterPage implements OnInit {
     }
 
     onRegister() {
-       this.userData = {
-        "emp_length" : emp_length,
-        "home_ownership" : home_ownership,
-        "annual_inc": annual_inc,
-        "total_acc": total_acc,
-        "term": term
+      this.userData = {
+        "emp_length" : this.emp_length,
+        "home_ownership" : this.home_ownership,
+        "annual_inc": this.annual_inc,
+        "total_acc": this.total_acc,
+        "term": this.term
       };
-        this.apiService.creditRating();
+        this.apiService.creditRating(this.userData);
         this.router.navigateByUrl("home");;
         this.presentLoading();
     }
